@@ -35,10 +35,9 @@ metadata:
   labels:
     app: app
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
-    nodePort: 31555
     targetPort: 5000
     protocol: TCP
   selector:
